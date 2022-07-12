@@ -209,6 +209,46 @@ int main(){
     }
 }
 
+9.
+   1
+  232
+ 34543
+4567654
+
+int main() {
+    // Write C++ code here
+    int n;
+    cin>>n;
+    int i=1,j;
+    while(i<=n){
+        //space
+        int space = n-i,s=1;
+        while(s<=space){
+            cout<<" ";
+            s++;
+        }
+        //1st half
+        j=i;
+        int inc = 1;
+        while(inc<=i){
+            cout<<j;
+            j++;
+            inc++;
+        }
+        //2nd half
+        j=j-2;
+        int dec=i-1;
+        while(dec>=1){
+            cout<<j;
+            j--;
+            dec--;
+        }
+        cout<<endl;
+        i++;
+    }
+    return 0;
+}
+
 
 
 
