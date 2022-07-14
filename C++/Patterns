@@ -249,6 +249,55 @@ int main() {
     return 0;
 }
 
+10.
+   *
+  ***
+ *****
+  ***
+   *
+
+int main(){
+    int n;
+    cin>>n;
+    int i=1,j=1;
+    while(i<=n){
+        int between = (n/2)+1;
+        if(i<=between){
+            //space
+            int space = between-i,sp=1;
+            while(sp<=between-i){
+                cout<<" ";
+                sp++;
+            }
+            
+            //star
+            int star = 2*i-1,st=1;
+            while(st<=star){
+                cout<<"*";
+                st++;
+            }
+        }
+        else{
+            //space
+            int space=between-(n-i+1), sp=1;
+            while(sp<=space){
+                cout<<" ";
+                sp++;
+            }
+            
+            //star
+            int star = 2*(n-i+1)-1, st=1;
+            while(st<=star){
+                cout<<"*";
+                st++;
+            }
+        }
+        
+      cout<<endl;
+        i++;
+    }    
+}
+
 
 
 
